@@ -3,18 +3,14 @@
 Create table If Not Exists Customers
 (
     id
-    int,
+        int,
     name
-    varchar
-(
-    255
-));
+        varchar(255)
+);
 Create table If Not Exists Orders
 (
-    id
-    int,
-    customerId
-    int
+    id int,
+    customerId int
 );
 Truncate table Customers;
 insert into Customers (id, name)
